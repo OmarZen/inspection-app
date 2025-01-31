@@ -18,6 +18,9 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "@arcgis/core": "^4.31.6",
+    "@types/arcgis-js-api": "^4.27.2",
+    "frontend-inspection-api": "file:",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

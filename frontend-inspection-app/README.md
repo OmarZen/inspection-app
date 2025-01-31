@@ -25,3 +25,60 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+```
+frontend-inspection-app
+├─ .angular
+├─ .browserslistrc
+├─ .editorconfig
+├─ .gitignore
+├─ angular.json
+├─ karma.conf.js
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ src
+│  ├─ app
+│  │  ├─ app.component.css
+│  │  ├─ app.component.html
+│  │  ├─ app.component.spec.ts
+│  │  ├─ app.component.ts
+│  │  ├─ app.module.ts
+│  │  ├─ inspection
+│  │  │  ├─ add-edit-inspection
+│  │  │  │  ├─ add-edit-inspection.component.css
+│  │  │  │  ├─ add-edit-inspection.component.html
+│  │  │  │  ├─ add-edit-inspection.component.spec.ts
+│  │  │  │  └─ add-edit-inspection.component.ts
+│  │  │  ├─ inspection.component.css
+│  │  │  ├─ inspection.component.html
+│  │  │  ├─ inspection.component.spec.ts
+│  │  │  ├─ inspection.component.ts
+│  │  │  └─ show-inspection
+│  │  │     ├─ show-inspection.component.css
+│  │  │     ├─ show-inspection.component.html
+│  │  │     ├─ show-inspection.component.spec.ts
+│  │  │     └─ show-inspection.component.ts
+│  │  ├─ inspection-api.service.spec.ts
+│  │  ├─ inspection-api.service.ts
+│  │  └─ map
+│  │     ├─ map.component.css
+│  │     ├─ map.component.html
+│  │     ├─ map.component.spec.ts
+│  │     └─ map.component.ts
+│  ├─ assets
+│  │  └─ .gitkeep
+│  ├─ environments
+│  │  ├─ environment.prod.ts
+│  │  └─ environment.ts
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ main.ts
+│  ├─ polyfills.ts
+│  ├─ styles.css
+│  └─ test.ts
+├─ tsconfig.app.json
+├─ tsconfig.json
+└─ tsconfig.spec.json
+
+```

@@ -20,22 +20,29 @@ export class AddEditInspectionComponent implements OnInit {
   status: string = "";
   comments: string = "";
   inspectionTypeId!: number;
+  latitude: number = 0;  // Add latitude
+  longitude: number = 0; // Add longitude
 
   ngOnInit(): void {
     this.id = this.inspection.id;
     this.status = this.inspection.status;
     this.comments = this.inspection.comments;
     this.inspectionTypeId = this.inspection.inspectionTypeId;
+    this.latitude = this.inspection.latitude || 0;  // Initialize latitude
+    this.longitude = this.inspection.longitude || 0; // Initialize longitude
     this.statusList$ = this.service.getStatusList();
     this.inspectionList$ = this.service.getInspectionList();
     this.inspectionTypesList$ = this.service.getInspectionTypesList();
   }
 
+  // Add a new method to add or update an inspection
   addInspection() {
     var inspection = {
       status:this.status,
       comments:this.comments,
-      inspectionTypeId:this.inspectionTypeId
+      inspectionTypeId:this.inspectionTypeId,
+      latitude: this.latitude,
+      longitude: this.longitude
     }
     this.service.addInspection(inspection).subscribe(res => {
       var closeModalBtn = document.getElementById('add-edit-modal-close');
@@ -60,7 +67,9 @@ export class AddEditInspectionComponent implements OnInit {
       id: this.id,
       status:this.status,
       comments:this.comments,
-      inspectionTypeId:this.inspectionTypeId
+      inspectionTypeId:this.inspectionTypeId,
+      latitude: this.latitude,
+      longitude: this.longitude
     }
     var id:number = this.id;
     this.service.updateInspection(id,inspection).subscribe(res => {
